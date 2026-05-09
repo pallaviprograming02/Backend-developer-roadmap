@@ -1,0 +1,1498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backend Master/With pallavi_way -Complete Backend Developer Roadmap</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-slate-900 text-white min-h-screen">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-slate-900/95 backdrop-blur-lg border-b border-slate-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center gap-3">
+                    <div
+                        class="w-10 h-10 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-lg flex items-center justify-center">
+                        <i class="fas fa-server text-white"></i>
+                    </div>
+                    <span
+                        class="text-xl font-bold bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">BackendMaster</span>
+                </div>
+                <div class="hidden md:flex items-center gap-1">
+                    <button onclick="showSection('home')"
+                        class="nav-btn px-4 py-2 rounded-lg text-sm font-medium hover:bg-slate-700 transition-colors"
+                        data-section="home">🏠 Home</button>
+                    <button onclick="showSection('roadmap')"
+                        class="nav-btn px-4 py-2 rounded-lg text-sm font-medium hover:bg-slate-700 transition-colors"
+                        data-section="roadmap">🗺️ Roadmap</button>
+                    <button onclick="showSection('tutorials')"
+                        class="nav-btn px-4 py-2 rounded-lg text-sm font-medium hover:bg-slate-700 transition-colors"
+                        data-section="tutorials">📚 Tutorials</button>
+                    <button onclick="showSection('playground')"
+                        class="nav-btn px-4 py-2 rounded-lg text-sm font-medium hover:bg-slate-700 transition-colors"
+                        data-section="playground">⚡ Playground</button>
+                    <button onclick="showSection('mcq')"
+                        class="nav-btn px-4 py-2 rounded-lg text-sm font-medium hover:bg-slate-700 transition-colors"
+                        data-section="mcq">📝 MCQ Tests</button>
+                    <button onclick="showSection('projects')"
+                        class="nav-btn px-4 py-2 rounded-lg text-sm font-medium hover:bg-slate-700 transition-colors"
+                        data-section="projects">🚀 Projects</button>
+                    <button onclick="showSection('interview')"
+                        class="nav-btn px-4 py-2 rounded-lg text-sm font-medium hover:bg-slate-700 transition-colors"
+                        data-section="interview">💼 Interview</button>
+                    <button onclick="showSection('certificates')"
+                        class="nav-btn px-4 py-2 rounded-lg text-sm font-medium hover:bg-slate-700 transition-colors"
+                        data-section="certificates">🏆 Certificates</button>
+                </div>
+                <button onclick="toggleDarkMode()"
+                    class="p-2 rounded-lg bg-slate-700 hover:bg-slate-600 transition-colors">
+                    <i class="fas fa-moon" id="darkModeIcon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-16">
+        <!-- HOME SECTION -->
+        <section id="home" class="section active">
+            <!-- Hero Section -->
+            <div class="gradient-bg min-h-screen flex items-center">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+                    <div class="grid lg:grid-cols-2 gap-12 items-center">
+                        <div class="fade-in">
+                            <div
+                                class="inline-block px-4 py-2 bg-indigo-500/20 rounded-full text-indigo-300 text-sm font-medium mb-6">
+                                🚀 Complete Backend Developer with Pallavi_way Roadmap
+                            </div>
+                            <h1 class="text-5xl lg:text-7xl font-bold mb-6 leading-tight">
+                                Master <span
+                                    class="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">Backend</span>
+                                Development With Pallavi_Way
+                            </h1>
+                            <p class="text-xl text-slate-300 mb-8 leading-relaxed">
+                                Learn backend development from scratch with our comprehensive roadmap.
+                                Node.js, Express, MongoDB, SQL, Authentication, DevOps & more!
+                            </p>
+                            <div class="flex flex-wrap gap-4">
+                                <button onclick="showSection('roadmap')"
+                                    class="px-8 py-4 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-xl font-semibold hover:opacity-90 transition-all hover:scale-105 shadow-lg glow">
+                                    Start Learning <i class="fas fa-arrow-right ml-2"></i>
+                                </button>
+                                <button onclick="showSection('playground')"
+                                    class="px-8 py-4 bg-slate-700/50 rounded-xl font-semibold hover:bg-slate-700 transition-all border border-slate-600">
+                                    Try Playground <i class="fas fa-code ml-2"></i>
+                                </button>
+                            </div>
+                            <div class="flex items-center gap-8 mt-12">
+                                <div>
+                                    <div class="text-3xl font-bold text-indigo-400">500+</div>
+                                    <div class="text-slate-400">MCQ Questions</div>
+                                </div>
+                                <div>
+                                    <div class="text-3xl font-bold text-purple-400">50+</div>
+                                    <div class="text-slate-400">Projects</div>
+                                </div>
+                                <div>
+                                    <div class="text-3xl font-bold text-pink-400">100+</div>
+                                    <div class="text-slate-400">Topics</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <div class="card-gradient rounded-3xl p-8 border border-slate-600 glow">
+                                <!-- Client-Server Diagram -->
+                                <svg viewBox="0 0 500 300" class="w-full">
+                                    <!-- Client -->
+                                    <rect x="30" y="100" width="120" height="80" rx="10" fill="#4f46e5" opacity="0.8" />
+                                    <text x="90" y="135" text-anchor="middle" fill="white" font-size="14"
+                                        font-weight="bold">🌐 Client</text>
+                                    <text x="90" y="155" text-anchor="middle" fill="white"
+                                        font-size="11">(Browser/Mobile)</text>
+
+                                    <!-- Server -->
+                                    <rect x="350" y="100" width="120" height="80" rx="10" fill="#10b981"
+                                        opacity="0.8" />
+                                    <text x="410" y="135" text-anchor="middle" fill="white" font-size="14"
+                                        font-weight="bold">🖥️ Server</text>
+                                    <text x="410" y="155" text-anchor="middle" fill="white"
+                                        font-size="11">(Backend)</text>
+
+                                    <!-- Database -->
+                                    <rect x="350" y="200" width="120" height="60" rx="10" fill="#f59e0b"
+                                        opacity="0.8" />
+                                    <text x="410" y="235" text-anchor="middle" fill="white" font-size="12"
+                                        font-weight="bold">🗄️ Database</text>
+
+                                    <!-- Arrows -->
+                                    <path d="M150 140 L345 140" stroke="#6366f1" stroke-width="3"
+                                        class="connection-line" />
+                                    <polygon points="340,135 350,140 340,145" fill="#6366f1" />
+
+                                    <path d="M410 180 L410 195" stroke="#f59e0b" stroke-width="2"
+                                        class="connection-line" />
+                                    <polygon points="405,190 410,200 415,190" fill="#f59e0b" />
+
+                                    <text x="250" y="130" text-anchor="middle" fill="#a5b4fc" font-size="11">HTTP
+                                        Request</text>
+                                    <text x="250" y="160" text-anchor="middle" fill="#a5b4fc" font-size="11">HTTP
+                                        Response</text>
+                                </svg>
+                                <div class="text-center mt-4">
+                                    <span class="text-sm text-slate-400">Client-Server Architecture</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Stats -->
+            <div class="bg-slate-800 py-16">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="grid md:grid-cols-4 gap-8">
+                        <div class="text-center">
+                            <div class="text-4xl font-bold text-indigo-400 mb-2">8</div>
+                            <div class="text-slate-400">Phases</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl font-bold text-purple-400 mb-2">50+</div>
+                            <div class="text-slate-400">Topics</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl font-bold text-pink-400 mb-2">100+</div>
+                            <div class="text-slate-400">Code Examples</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl font-bold text-green-400 mb-2">Live</div>
+                            <div class="text-slate-400">Playground</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ROADMAP SECTION -->
+        <section id="roadmap" class="section hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+                <div class="text-center mb-16">
+                    <h1 class="text-4xl font-bold mb-4">🗺️ Backend Developer Roadmap</h1>
+                    <p class="text-slate-400 text-lg">Complete path from beginner to advanced backend developer</p>
+                </div>
+
+                <!-- Progress Tracker -->
+                <div class="bg-slate-800 rounded-2xl p-6 mb-12">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="font-semibold">Your Progress</h3>
+                        <span id="progressPercent" class="text-indigo-400 font-bold">0%</span>
+                    </div>
+                    <div class="h-4 bg-slate-700 rounded-full overflow-hidden">
+                        <div id="progressBar"
+                            class="progress-bar h-full bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full"
+                            style="width: 0%"></div>
+                    </div>
+                </div>
+
+                <!-- Phase 1: Foundation -->
+                <div
+                    class="phase-card bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-6 mb-6 border border-slate-700">
+                    <div class="flex items-start gap-4">
+                        <div
+                            class="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center text-2xl shrink-0">
+                            🌱
+                        </div>
+                        <div class="flex-1">
+                            <h2 class="text-2xl font-bold mb-2">Phase 1: Foundation (Must Know)</h2>
+                            <p class="text-slate-400 mb-4">Essential concepts every backend developer must understand
+                            </p>
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div class="topic-item bg-slate-700/50 rounded-lg p-4 cursor-pointer"
+                                    onclick="showTopicDetails('client-server')">
+                                    <div class="flex items-center gap-3">
+                                        <i class="fas fa-network-wired text-green-400"></i>
+                                        <span>Client-Server Architecture</span>
+                                    </div>
+                                </div>
+                                <div class="topic-item bg-slate-700/50 rounded-lg p-4 cursor-pointer"
+                                    onclick="showTopicDetails('frontend-backend')">
+                                    <div class="flex items-center gap-3">
+                                        <i class="fas fa-laptop-code text-blue-400"></i>
+                                        <span>Frontend vs Backend</span>
+                                    </div>
+                                </div>
+                                <div class="topic-item bg-slate-700/50 rounded-lg p-4 cursor-pointer"
+                                    onclick="showTopicDetails('api')">
+                                    <div class="flex items-center gap-3">
+                                        <i class="fas fa-plug text-purple-400"></i>
+                                        <span>API Concepts</span>
+                                    </div>
+                                </div>
+                                <div class="topic-item bg-slate-700/50 rounded-lg p-4 cursor-pointer"
+                                    onclick="showTopicDetails('http')">
+                                    <div class="flex items-center gap-3">
+                                        <i class="fas fa-globe text-indigo-400"></i>
+                                        <span>HTTP/HTTPS Protocol</span>
+                                    </div>
+                                </div>
+                                <div class="topic-item bg-slate-700/50 rounded-lg p-4 cursor-pointer"
+                                    onclick="showTopicDetails('request-response')">
+                                    <div class="flex items-center gap-3">
+                                        <i class="fas fa-exchange-alt text-yellow-400"></i>
+                                        <span>Request & Response</span>
+                                    </div>
+                                </div>
+                                <div class="topic-item bg-slate-700/50 rounded-lg p-4 cursor-pointer"
+                                    onclick="showTopicDetails('status-codes')">
+                                    <div class="flex items-center gap-3">
+                                        <i class="fas fa-check-circle text-green-400"></i>
+                                        <span>HTTP Status Codes</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-4 flex gap-2">
+                                <span class="px-3 py-1 bg-green-500/20 text-green-400 rounded-full text-sm">✓ Mark
+                                    Complete</span>
+                                <span class="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-sm">📚 6
+                                    Topics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phase 2: Core Programming -->
+                <div
+                    class="phase-card bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-6 mb-6 border border-slate-700">
+                    <div class="flex items-start gap-4">
+                        <div
+                            class="w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-xl flex items-center justify-center text-2xl shrink-0">
+                            🌿
+                        </div>
+                        <div class="flex-1">
+                            <h2 class="text-2xl font-bold mb-2">Phase 2: Core Programming (Node.js)</h2>
+                            <p class="text-slate-400 mb-4">Master JavaScript for backend development</p>
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div class="topic-item bg-slate-700/50 rounded-lg p-4 cursor-pointer">
+                                    <div class="flex items-center gap-3">
+                                        <i class="fas fa-code text-yellow-400"></i>
+                                        <span>Variables & Data Types</span>
+                                    </div>
+                                </div>
+                                <div class="topic-item bg-slate-700/50 rounded-lg p-4 cursor-pointer">
+                                    <div class="flex items-center gap-3">
+                                        <i class="fas fa-function text-blue-400"></i>
+                                        <span>Functions</span>
+                                    </div>
+                                </div>
+                                <div class="topic-item bg-slate-700/50 rounded-lg p-4 cursor-pointer">
+                                    <div class="flex items-center gap-3">
+                                        <i class="fas fa-boxes text-purple-400"></i>
+                                        <span>Objects & Arrays</span>
+                                    </div>
+                                </div>
+                                <div class="topic-item bg-slate-700/50 rounded-lg p-4 cursor-pointer">
+                                    <div class="flex items-center gap-3">
+                                        <i class="fas fa-undo text-orange-400"></i>
+                                        <span>Callbacks</span>
+                                    </div>
+                                </div>
+                                <div class="topic-item bg-slate-700/50 rounded-lg p-4 cursor-pointer">
+                                    <div class="flex items-center gap-3">
+                                        <i class="fas fa-handshake text-green-400"></i>
+                                        <span>Promises</span>
+                                    </div>
+                                </div>
+                                <div class="topic-item bg-slate-700/50 rounded-lg p-4 cursor-pointer">
+                                    <div class="flex items-center gap-3">
+                                        <i class="fas fa-bolt text-yellow-400"></i>
+                                        <span>Async/Await</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phase 3: Server & Framework -->
+                <div
+                    class="phase-card bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-6 mb-6 border border-slate-700">
+                    <div class="flex items-start gap-4">
+                        <div
+                            class="w-16 h-16 bg-gradient-to-br from-amber-500 to-orange-600 rounded-xl flex items-center justify-center text-2xl shrink-0">
+                            🖥️
+                        </div>
+                        <div class="flex-1">
+                            <h2 class="text-2xl font-bold mb-2">Phase 3: Server & Framework</h2>
+                            <p class="text-slate-400 mb-4">Express.js - The most popular Node.js framework</p>
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div class="topic-item bg-slate-700/50 rounded-lg p-4 cursor-pointer">
+                                    <div class="flex items-center gap-3">
+                                        <i class="fas fa-cog text-indigo-400"></i>
+                                        <span>Express Setup</span>
+                                    </div>
+                                </div>
+                                <div class="topic-item bg-slate-700/50 rounded-lg p-4 cursor-pointer">
+                                    <div class="flex items-center gap-3">
+                                        <i class="fas fa-route text-green-400"></i>
+                                        <span>Routing</span>
+                                    </div>
+                                </div>
+                                <div class="topic-item bg-slate-700/50 rounded-lg p-4 cursor-pointer">
+                                    <div class="flex items-center gap-3">
+                                        <i class="fas fa-layer-group text-purple-400"></i>
+                                        <span>Middleware</span>
+                                    </div>
+                                </div>
+                                <div class="topic-item bg-slate-700/50 rounded-lg p-4 cursor-pointer">
+                                    <div class="flex items-center gap-3">
+                                        <i class="fas fa-envelope text-blue-400"></i>
+                                        <span>Request & Response</span>
+                                    </div>
+                                </div>
+                                <div class="topic-item bg-slate-700/50 rounded-lg p-4 cursor-pointer">
+                                    <div class="flex items-center gap-3">
+                                        <i class="fas fa-exclamation-triangle text-red-400"></i>
+                                        <span>Error Handling</span>
+                                    </div>
+                                </div>
+                                <div class="topic-item bg-slate-700/50 rounded-lg p-4 cursor-pointer">
+                                    <div class="flex items-center gap-3">
+                                        <i class="fas fa-sitemap text-cyan-400"></i>
+                                        <span>MVC Pattern</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phase 4: Database -->
+                <div
+                    class="phase-card bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-6 mb-6 border border-slate-700">
+                    <div class="flex items-start gap-4">
+                        <div
+                            class="w-16 h-16 bg-gradient-to-br from-rose-500 to-pink-600 rounded-xl flex items-center justify-center text-2xl shrink-0">
+                            🗄️
+                        </div>
+                        <div class="flex-1">
+                            <h2 class="text-2xl font-bold mb-2">Phase 4: Database (Very Important)</h2>
+                            <p class="text-slate-400 mb-4">Master both SQL and NoSQL databases</p>
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div class="topic-item bg-slate-700/50 rounded-lg p-4 cursor-pointer">
+                                    <div class="flex items-center gap-3">
+                                        <i class="fas fa-database text-blue-400"></i>
+                                        <span>Database Basics</span>
+                                    </div>
+                                </div>
+                                <div class="topic-item bg-slate-700/50 rounded-lg p-4 cursor-pointer">
+                                    <div class="flex items-center gap-3">
+                                        <i class="fas fa-code-branch text-purple-400"></i>
+                                        <span>SQL vs NoSQL</span>
+                                    </div>
+                                </div>
+                                <div class="topic-item bg-slate-700/50 rounded-lg p-4 cursor-pointer">
+                                    <div class="flex items-center gap-3">
+                                        <i class="fas fa-database text-green-400"></i>
+                                        <span>MongoDB (NoSQL)</span>
+                                    </div>
+                                </div>
+                                <div class="topic-item bg-slate-700/50 rounded-lg p-4 cursor-pointer">
+                                    <div class="flex items-center gap-3">
+                                        <i class="fas fa-table text-amber-400"></i>
+                                        <span>MySQL / PostgreSQL</span>
+                                    </div>
+                                </div>
+                                <div class="topic-item bg-slate-700/50 rounded-lg p-4 cursor-pointer">
+                                    <div class="flex items-center gap-3">
+                                        <i class="fas fa-link text-cyan-400"></i>
+                                        <span>Joins & Relationships</span>
+                                    </div>
+                                </div>
+                                <div class="topic-item bg-slate-700/50 rounded-lg p-4 cursor-pointer">
+                                    <div class="flex items-center gap-3">
+                                        <i class="fas fa-bolt text-red-400"></i>
+                                        <span>Indexing & Optimization</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phase 5: Auth & Security -->
+                <div
+                    class="phase-card bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-6 mb-6 border border-slate-700">
+                    <div class="flex items-start gap-4">
+                        <div
+                            class="w-16 h-16 bg-gradient-to-br from-red-500 to-rose-600 rounded-xl flex items-center justify-center text-2xl shrink-0">
+                            🔐
+                        </div>
+                        <div class="flex-1">
+                            <h2 class="text-2xl font-bold mb-2">Phase 5: Authentication & Security</h2>
+                            <p class="text-slate-400 mb-4">Secure your applications like a pro</p>
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div class="topic-item bg-slate-700/50 rounded-lg p-4 cursor-pointer">
+                                    <div class="flex items-center gap-3">
+                                        <i class="fas fa-user-lock text-green-400"></i>
+                                        <span>Login/Signup System</span>
+                                    </div>
+                                </div>
+                                <div class="topic-item bg-slate-700/50 rounded-lg p-4 cursor-pointer">
+                                    <div class="flex items-center gap-3">
+                                        <i class="fas fa-key text-yellow-400"></i>
+                                        <span>Password Hashing</span>
+                                    </div>
+                                </div>
+                                <div class="topic-item bg-slate-700/50 rounded-lg p-4 cursor-pointer">
+                                    <div class="flex items-center gap-3">
+                                        <i class="fas fa-id-card text-blue-400"></i>
+                                        <span>JWT Tokens</span>
+                                    </div>
+                                </div>
+                                <div class="topic-item bg-slate-700/50 rounded-lg p-4 cursor-pointer">
+                                    <div class="flex items-center gap-3">
+                                        <i class="fas fa-cookie-bite text-amber-400"></i>
+                                        <span>Cookies & Sessions</span>
+                                    </div>
+                                </div>
+                                <div class="topic-item bg-slate-700/50 rounded-lg p-4 cursor-pointer">
+                                    <div class="flex items-center gap-3">
+                                        <i class="fas fa-shield-alt text-purple-400"></i>
+                                        <span>CORS, HTTPS, Rate Limiting</span>
+                                    </div>
+                                </div>
+                                <div class="topic-item bg-slate-700/50 rounded-lg p-4 cursor-pointer">
+                                    <div class="flex items-center gap-3">
+                                        <i class="fas fa-bug text-red-400"></i>
+                                        <span>SQL Injection, XSS, CSRF</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phase 6: Advanced -->
+                <div
+                    class="phase-card bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-6 mb-6 border border-slate-700">
+                    <div class="flex items-start gap-4">
+                        <div
+                            class="w-16 h-16 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-xl flex items-center justify-center text-2xl shrink-0">
+                            🌲
+                        </div>
+                        <div class="flex-1">
+                            <h2 class="text-2xl font-bold mb-2">Phase 6: Advanced Backend</h2>
+                            <p class="text-slate-400 mb-4">Take your skills to the next level</p>
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div class="topic-item bg-slate-700/50 rounded-lg p-4 cursor-pointer">
+                                    <div class="flex items-center gap-3">
+                                        <i class="fas fa-restroom text-indigo-400"></i>
+                                        <span>REST API Principles</span>
+                                    </div>
+                                </div>
+                                <div class="topic-item bg-slate-700/50 rounded-lg p-4 cursor-pointer">
+                                    <div class="flex items-center gap-<i class=" fas3">
+                                        fa-file-upload text-green-400"></i>
+                                        <span>File Handling & Storage</span>
+                                    </div>
+                                </div>
+                                <div class="topic-item bg-slate-700/50 rounded-lg p-4 cursor-pointer">
+                                    <div class="flex items-center gap-3">
+                                        <i class="fas fa-tachometer-alt text-purple-400"></i>
+                                        <span>Caching with Redis</span>
+                                    </div>
+                                </div>
+                                <div class="topic-item bg-slate-700/50 rounded-lg p-4 cursor-pointer">
+                                    <div class="flex items-center gap-3">
+                                        <i class="fas fa-server text-blue-400"></i>
+                                        <span>Load Balancing</span>
+                                    </div>
+                                </div>
+                                <div class="topic-item bg-slate-700/50 rounded-lg p-4 cursor-pointer">
+                                    <div class="flex items-center gap-3">
+                                        <i class="fas fa-magic text-pink-400"></i>
+                                        <span>API Pagination & Filtering</span>
+                                    </div>
+                                </div>
+                                <div class="topic-item bg-slate-700/50 rounded-lg p-4 cursor-pointer">
+                                    <div class="flex items-center gap-3">
+                                        <i class="fas fa-chart-line text-green-400"></i>
+                                        <span>Microservices Basics</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phase 7: DevOps -->
+                <div
+                    class="phase-card bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-6 mb-6 border border-slate-700">
+                    <div class="flex items-start gap-4">
+                        <div
+                            class="w-16 h-16 bg-gradient-to-br from-violet-500 to-purple-600 rounded-xl flex items-center justify-center text-2xl shrink-0">
+                            🌟
+                        </div>
+                        <div class="flex-1">
+                            <h2 class="text-2xl font-bold mb-2">Phase 7: DevOps & Deployment</h2>
+                            <p class="text-slate-400 mb-4">Deploy and manage your applications</p>
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div class="topic-item bg-slate-700/50 rounded-lg p-4 cursor-pointer">
+                                    <div class="flex items-center gap-3">
+                                        <i class="fab fa-git-alt text-orange-400"></i>
+                                        <span>Git & GitHub</span>
+                                    </div>
+                                </div>
+                                <div class="topic-item bg-slate-700/50 rounded-lg p-4 cursor-pointer">
+                                    <div class="flex items-center gap-3">
+                                        <i class="fas fa-code-branch text-purple-400"></i>
+                                        <span>Branching Strategies</span>
+                                    </div>
+                                </div>
+                                <div class="topic-item bg-slate-700/50 rounded-lg p-4 cursor-pointer">
+                                    <div class="flex items-center gap-3">
+                                        <i class="fas fa-cloud text-blue-400"></i>
+                                        <span>Cloud Hosting (AWS, Render)</span>
+                                    </div>
+                                </div>
+                                <div class="topic-item bg-slate-700/50 rounded-lg p-4 cursor-pointer">
+                                    <div class="flex items-center gap-3">
+                                        <i class="fas fa-infinity text-green-400"></i>
+                                        <span>CI/CD Pipelines</span>
+                                    </div>
+                                </div>
+                                <div class="topic-item bg-slate-700/50 rounded-lg p-4 cursor-pointer">
+                                    <div class="flex items-center gap-3">
+                                        <i class="fab fa-docker text-cyan-400"></i>
+                                        <span>Docker Basics</span>
+                                    </div>
+                                </div>
+                                <div class="topic-item bg-slate-700/50 rounded-lg p-4 cursor-pointer">
+                                    <div class="flex items-center gap-3">
+                                        <i class="fas fa-cogs text-gray-400"></i>
+                                        <span>Environment Variables</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TUTORIALS SECTION -->
+        <section id="tutorials" class="section hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+                <div class="text-center mb-12">
+                    <h1 class="text-4xl font-bold mb-4">📚 Backend Tutorials</h1>
+                    <p class="text-slate-400">Learn backend development with practical examples</p>
+                </div>
+
+                <!-- Tutorial Categories -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Node.js Tutorial -->
+                    <div
+                        class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-6 border border-slate-700 hover:border-indigo-500 transition-all cursor-pointer">
+                        <div class="w-14 h-14 bg-yellow-500/20 rounded-xl flex items-center justify-center mb-4">
+                            <i class="fab fa-node-js text-3xl text-yellow-400"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Node.js Fundamentals</h3>
+                        <p class="text-slate-400 text-sm mb-4">Learn Node.js from scratch with practical examples</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-slate-700 rounded text-xs">Event Loop</span>
+                            <span class="px-2 py-1 bg-slate-700 rounded text-xs">NPM</span>
+                            <span class="px-2 py-1 bg-slate-700 rounded text-xs">Modules</span>
+                        </div>
+                    </div>
+
+                    <!-- Express.js Tutorial -->
+                    <div
+                        class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-6 border border-slate-700 hover:border-purple-500 transition-all cursor-pointer">
+                        <div class="w-14 h-14 bg-purple-500/20 rounded-xl flex items-center justify-center mb-4">
+                            <i class="fas fa-server text-3xl text-purple-400"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Express.js Mastery</h3>
+                        <p class="text-slate-400 text-sm mb-4">Build powerful APIs with Express framework</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-slate-700 rounded text-xs">Routing</span>
+                            <span class="px-2 py-1 bg-slate-700 rounded text-xs">Middleware</span>
+                            <span class="px-2 py-1 bg-slate-700 rounded text-xs">MVC</span>
+                        </div>
+                    </div>
+
+                    <!-- MongoDB Tutorial -->
+                    <div
+                        class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-6 border border-slate-700 hover:border-green-500 transition-all cursor-pointer">
+                        <div class="w-14 h-14 bg-green-500/20 rounded-xl flex items-center justify-center mb-4">
+                            <i class="fas fa-leaf text-3xl text-green-400"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">MongoDB Database</h3>
+                        <p class="text-slate-400 text-sm mb-4">Master NoSQL database operations</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-slate-700 rounded text-xs">CRUD</span>
+                            <span class="px-2 py-1 bg-slate-700 rounded text-xs">Aggregation</span>
+                            <span class="px-2 py-1 bg-slate-700 rounded text-xs">Schema</span>
+                        </div>
+                    </div>
+
+                    <!-- Authentication Tutorial -->
+                    <div
+                        class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-6 border border-slate-700 hover:border-red-500 transition-all cursor-pointer">
+                        <div class="w-14 h-14 bg-red-500/20 rounded-xl flex items-center justify-center mb-4">
+                            <i class="fas fa-shield-alt text-3xl text-red-400"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Authentication & Security</h3>
+                        <p class="text-slate-400 text-sm mb-4">Implement secure auth systems</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-slate-700 rounded text-xs">JWT</span>
+                            <span class="px-2 py-1 bg-slate-700 rounded text-xs">OAuth</span>
+                            <span class="px-2 py-1 bg-slate-700 rounded text-xs">Bcrypt</span>
+                        </div>
+                    </div>
+
+                    <!-- REST API Tutorial -->
+                    <div
+                        class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-6 border border-slate-700 hover:border-blue-500 transition-all cursor-pointer">
+                        <div class="w-14 h-14 bg-blue-500/20 rounded-xl flex items-center justify-center mb-4">
+                            <i class="fas fa-plug text-3xl text-blue-400"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">REST API Design</h3>
+                        <p class="text-slate-400 text-sm mb-4">Design professional REST APIs</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-slate-700 rounded text-xs">RESTful</span>
+                            <span class="px-2 py-1 bg-slate-700 rounded text-xs">Versioning</span>
+                            <span class="px-2 py-1 bg-slate-700 rounded text-xs">Docs</span>
+                        </div>
+                    </div>
+
+                    <!-- SQL Tutorial -->
+                    <div
+                        class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-6 border border-slate-700 hover:border-amber-500 transition-all cursor-pointer">
+                        <div class="w-14 h-14 bg-amber-500/20 rounded-xl flex items-center justify-center mb-4">
+                            <i class="fas fa-database text-3xl text-amber-400"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">SQL Database</h3>
+                        <p class="text-slate-400 text-sm mb-4">Learn SQL queries and optimization</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-slate-700 rounded text-xs">Joins</span>
+                            <span class="px-2 py-1 bg-slate-700 rounded text-xs">Indexes</span>
+                            <span class="px-2 py-1 bg-slate-700 rounded text-xs">Transactions</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Code Example -->
+                <div class="mt-12 bg-slate-800 rounded-2xl p-6">
+                    <div class="flex items-center justify-between mb-6">
+                        <h3 class="text-xl font-bold">📝 Sample Express.js Code</h3>
+                        <button
+                            class="px-4 py-2 bg-indigo-500 rounded-lg text-sm hover:bg-indigo-600 transition-colors">
+                            <i class="fas fa-copy mr-2"></i>Copy Code
+                        </button>
+                    </div>
+                    <div class="terminal">
+                        <div class="terminal-header">
+                            <div class="terminal-dot bg-red-500"></div>
+                            <div class="terminal-dot bg-yellow-500"></div>
+                            <div class="terminal-dot bg-green-500"></div>
+                            <span class="text-slate-400 text-sm ml-2">server.js</span>
+                        </div>
+                        <pre class="p-6 text-green-400 code-block overflow-x-auto"><code>const express = require('express');
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+// Middleware
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+// Routes
+app.get('/api/users', (req, res) => {
+    const users = [
+        { id: 1, name: 'John', email: 'john@example.com' },
+        { id: 2, name: 'Jane', email: 'jane@example.com' }
+    ];
+    res.json({ success: true, data: users });
+});
+
+app.post('/api/users', (req, res) => {
+    const { name, email } = req.body;
+    // Validate input
+    if (!name || !email) {
+        return res.status(400).json({ 
+            success: false, 
+            message: 'Name and email required' 
+        });
+    }
+    res.status(201).json({ 
+        success: true, 
+        message: 'User created',
+        data: { id: 3, name, email }
+    });
+});
+
+// Error handling middleware
+app.use((err, req, res, next) => {
+    console.error(err.stack);
+    res.status(500).json({ 
+        success: false, 
+        message: 'Something went wrong!' 
+    });
+});
+
+app.listen(PORT, () => {
+    console.log(`🚀 Server running on port ${PORT}`);
+});</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PLAYGROUND SECTION -->
+        <section id="playground" class="section hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+                <div class="text-center mb-12">
+                    <h1 class="text-4xl font-bold mb-4">⚡ API Playground</h1>
+                    <p class="text-slate-400">Test and experiment with backend code live</p>
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-8">
+                    <!-- Code Editor -->
+                    <div class="bg-slate-800 rounded-2xl overflow-hidden border border-slate-700">
+                        <div class="bg-slate-900 px-4 py-3 flex items-center justify-between border-b border-slate-700">
+                            <div class="flex items-center gap-4">
+                                <span class="text-sm font-medium">JavaScript Editor</span>
+                                <select id="codeTemplate" class="bg-slate-700 rounded px-2 py-1 text-sm"
+                                    onchange="loadTemplate()">
+                                    <option value="hello">Hello World</option>
+                                    <option value="async">Async/Await Example</option>
+                                    <option value="promise">Promise Example</option>
+                                    <option value="api">API Call</option>
+                                </select>
+                            </div>
+                            <button onclick="runCode()"
+                                class="px-4 py-2 bg-green-500 rounded-lg text-sm hover:bg-green-600 transition-colors">
+                                <i class="fas fa-play mr-2"></i>Run
+                            </button>
+                        </div>
+                        <textarea id="codeEditor"
+                            class="w-full h-80 bg-slate-900 text-green-400 p-4 code-block focus:outline-none resize-none"
+                            spellcheck="false">// JavaScript Code Editor
+// Write your code here and click Run!
+
+const greeting = (name) => {
+    return `Hello, ${name}! Welcome to BackendMaster.`;
+};
+
+console.log(greeting('Developer'));
+console.log('Backend development is awesome!');
+
+// Try editing this code!</textarea>
+                    </div>
+
+                    <!-- Output Terminal -->
+                    <div class="bg-slate-800 rounded-2xl overflow-hidden border border-slate-700">
+                        <div class="bg-slate-900 px-4 py-3 flex items-center justify-between border-b border-slate-700">
+                            <span class="text-sm font-medium">Output Terminal</span>
+                            <button onclick="clearOutput()"
+                                class="px-3 py-1 bg-slate-700 rounded text-xs hover:bg-slate-600 transition-colors">
+                                <i class="fas fa-trash mr-1"></i>Clear
+                            </button>
+                        </div>
+                        <div id="outputTerminal" class="h-80 bg-slate-950 p-4 overflow-auto code-block text-sm">
+                            <div class="text-slate-500">// Output will appear here...</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- API Tester -->
+                <div class="mt-12 bg-slate-800 rounded-2xl p-6 border border-slate-700">
+                    <h3 class="text-xl font-bold mb-6">🌐 API Request Tester</h3>
+                    <div class="grid md:grid-cols-4 gap-4 mb-6">
+                        <select id="httpMethod"
+                            class="bg-slate-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                            <option value="GET">GET</option>
+                            <option value="POST">POST</option>
+                            <option value="PUT">PUT</option>
+                            <option value="DELETE">DELETE</option>
+                        </select>
+                        <input id="apiUrl" type="text" placeholder="https://api.example.com/users"
+                            class="bg-slate-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500 md:col-span-2"
+                            value="https://jsonplaceholder.typicode.com/users">
+                        <button onclick="testApi()"
+                            class="bg-indigo-500 hover:bg-indigo-600 rounded-lg px-4 py-3 font-medium transition-colors">
+                            <i class="fas fa-paper-plane mr-2"></i>Send
+                        </button>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <!-- Request Body -->
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Request Body (JSON)</label>
+                            <textarea id="requestBody"
+                                class="w-full h-48 bg-slate-700 rounded-lg p-4 code-block text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                                spellcheck="false">{
+  "name": "John Doe",
+  "email": "john@example.com",
+  "age": 25
+}</textarea>
+                        </div>
+                        <!-- Response -->
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Response</label>
+                            <div id="apiResponse"
+                                class="w-full h-48 bg-slate-700 rounded-lg p-4 overflow-auto code-block text-sm">
+                                <span class="text-slate-500">// Response will appear here...</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- JSON Formatter -->
+                <div class="mt-8 bg-slate-800 rounded-2xl p-6 border border-slate-700">
+                    <h3 class="text-xl font-bold mb-6">📋 JSON Formatter & Validator</h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <textarea id="jsonInput"
+                                class="w-full h-48 bg-slate-700 rounded-lg p-4 code-block text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                                placeholder="Paste your JSON here..." spellcheck="false">{
+  "name": "Backend Developer",
+  "skills": ["Node.js", "Express", "MongoDB"],
+  "experience": 2,
+  "available": true
+}</textarea>
+                        </div>
+                        <div>
+                            <div id="jsonOutput"
+                                class="w-full h-48 bg-slate-700 rounded-lg p-4 overflow-auto code-block text-sm">
+                                <span class="text-slate-500">// Formatted JSON will appear here...</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 mt-4">
+                        <button onclick="formatJson()"
+                            class="px-6 py-2 bg-green-500 rounded-lg hover:bg-green-600 transition-colors">
+                            <i class="fas fa-format mr-2"></i>Format JSON
+                        </button>
+                        <button onclick="validateJson()"
+                            class="px-6 py-2 bg-blue-500 rounded-lg hover:bg-blue-600 transition-colors">
+                            <i class="fas fa-check mr-2"></i>Validate JSON
+                        </button>
+                        <button onclick="minifyJson()"
+                            class="px-6 py-2 bg-purple-500 rounded-lg hover:bg-purple-600 transition-colors">
+                            <i class="fas fa-compress mr-2"></i>Minify
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MCQ SECTION -->
+        <section id="mcq" class="section hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+                <div class="text-center mb-12">
+                    <h1 class="text-4xl font-bold mb-4">📝 MCQ Tests</h1>
+                    <p class="text-slate-400">Test your backend knowledge with interactive quizzes</p>
+                </div>
+
+                <!-- MCQ Categories -->
+                <div class="grid md:grid-cols-3 gap-4 mb-8">
+                    <button onclick="startMcq('http')"
+                        class="p-4 bg-gradient-to-br from-blue-500/20 to-blue-600/20 rounded-xl border border-blue-500/30 hover:border-blue-500 transition-all">
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-globe text-2xl text-blue-400"></i>
+                            <div class="text-left">
+                                <div class="font-semibold">HTTP & Web</div>
+                                <div class="text-sm text-slate-400">15 Questions</div>
+                            </div>
+                        </div>
+                    </button>
+                    <button onclick="startMcq('node')"
+                        class="p-4 bg-gradient-to-br from-yellow-500/20 to-yellow-600/20 rounded-xl border border-yellow-500/30 hover:border-yellow-500 transition-all">
+                        <div class="flex items-center gap-3">
+                            <i class="fab fa-node text-2xl text-yellow-400"></i>
+                            <div class="text-left">
+                                <div class="font-semibold">Node.js</div>
+                                <div class="text-sm text-slate-400">20 Questions</div>
+                            </div>
+                        </div>
+                    </button>
+                    <button onclick="startMcq('express')"
+                        class="p-4 bg-gradient-to-br from-purple-500/20 to-purple-600/20 rounded-xl border border-purple-500/30 hover:border-purple-500 transition-all">
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-server text-2xl text-purple-400"></i>
+                            <div class="text-left">
+                                <div class="font-semibold">Express.js</div>
+                                <div class="text-sm text-slate-400">15 Questions</div>
+                            </div>
+                        </div>
+                    </button>
+                    <button onclick="startMcq('database')"
+                        class="p-4 bg-gradient-to-br from-green-500/20 to-green-600/20 rounded-xl border border-green-500/30 hover:border-green-500 transition-all">
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-database text-2xl text-green-400"></i>
+                            <div class="text-left">
+                                <div class="font-semibold">Database</div>
+                                <div class="text-sm text-slate-400">20 Questions</div>
+                            </div>
+                        </div>
+                    </button>
+                    <button onclick="startMcq('auth')"
+                        class="p-4 bg-gradient-to-br from-red-500/20 to-red-600/20 rounded-xl border border-red-500/30 hover:border-red-500 transition-all">
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-shield-alt text-2xl text-red-400"></i>
+                            <div class="text-left">
+                                <div class="font-semibold">Authentication</div>
+                                <div class="text-sm text-slate-400">15 Questions</div>
+                            </div>
+                        </div>
+                    </button>
+                    <button onclick="startMcq('devops')"
+                        class="p-4 bg-gradient-to-br from-cyan-500/20 to-cyan-600/20 rounded-xl border border-cyan-500/30 hover:border-cyan-500 transition-all">
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-cloud text-2xl text-cyan-400"></i>
+                            <div class="text-left">
+                                <div class="font-semibold">DevOps</div>
+                                <div class="text-sm text-slate-400">10 Questions</div>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+
+                <!-- MCQ Test Area -->
+                <div id="mcqTestArea" class="hidden bg-slate-800 rounded-2xl p-8 border border-slate-700">
+                    <div class="flex items-center justify-between mb-6">
+                        <div>
+                            <h3 id="mcqCategoryTitle" class="text-xl font-bold">HTTP & Web Basics</h3>
+                            <p class="text-slate-400">Question <span id="currentQuestion">1</span> of <span
+                                    id="totalQuestions">10</span></p>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-2xl font-bold text-indigo-400"><span id="score">0</span> Score</div>
+                        </div>
+                    </div>
+
+                    <!-- Progress Bar -->
+                    <div class="h-2 bg-slate-700 rounded-full mb-8">
+                        <div id="mcqProgress"
+                            class="h-full bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full transition-all"
+                            style="width: 10%"></div>
+                    </div>
+
+                    <!-- Question -->
+                    <div id="questionContainer" class="mb-6">
+                        <h4 id="questionText" class="text-lg font-medium mb-4">Loading question...</h4>
+                        <div id="optionsContainer" class="space-y-3">
+                            <!-- Options will be dynamically inserted -->
+                        </div>
+                    </div>
+
+                    <!-- Explanation -->
+                    <div id="explanationContainer"
+                        class="hidden mt-6 p-4 bg-slate-700/50 rounded-lg border-l-4 border-indigo-500">
+                        <h5 class="font-semibold mb-2">📖 Explanation:</h5>
+                        <p id="explanationText" class="text-slate-300"></p>
+                    </div>
+
+                    <!-- Navigation -->
+                    <div class="flex justify-between mt-8">
+                        <button id="prevBtn" onclick="prevQuestion()"
+                            class="px-6 py-3 bg-slate-700 rounded-lg hover:bg-slate-600 transition-colors disabled:opacity-50"
+                            disabled>
+                            <i class="fas fa-arrow-left mr-2"></i>Previous
+                        </button>
+                        <button id="nextBtn" onclick="nextQuestion()"
+                            class="px-6 py-3 bg-indigo-500 rounded-lg hover:bg-indigo-600 transition-colors">
+                            Next<i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Results Area -->
+                <div id="resultsArea"
+                    class="hidden bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-8 border border-slate-700 text-center">
+                    <div
+                        class="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center">
+                        <i class="fas fa-trophy text-5xl text-yellow-400"></i>
+                    </div>
+                    <h2 class="text-3xl font-bold mb-4">Quiz Complete! 🎉</h2>
+                    <div class="grid md:grid-cols-3 gap-6 mb-8">
+                        <div class="bg-slate-700/50 rounded-xl p-6">
+                            <div class="text-4xl font-bold text-green-400 mb-2" id="finalScore">0</div>
+                            <div class="text-slate-400">Your Score</div>
+                        </div>
+                        <div class="bg-slate-700/50 rounded-xl p-6">
+                            <div class="text-4xl font-bold text-blue-400 mb-2" id="finalCorrect">0</div>
+                            <div class="text-slate-400">Correct Answers</div>
+                        </div>
+                        <div class="bg-slate-700/50 rounded-xl p-6">
+                            <div class="text-4xl font-bold text-red-400 mb-2" id="finalWrong">0</div>
+                            <div class="text-slate-400">Wrong Answers</div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center gap-4">
+                        <button onclick="restartMcq()"
+                            class="px-8 py-3 bg-indigo-500 rounded-xl hover:bg-indigo-600 transition-colors">
+                            <i class="fas fa-redo mr-2"></i>Try Again
+                        </button>
+                        <button onclick="showSection('interview')"
+                            class="px-8 py-3 bg-slate-700 rounded-xl hover:bg-slate-600 transition-colors">
+                            <i class="fas fa-briefcase mr-2"></i>Interview Prep
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="section hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+                <div class="text-center mb-12">
+                    <h1 class="text-4xl font-bold mb-4">🚀 Real Backend Projects</h1>
+                    <p class="text-slate-400">Build these projects to master backend development</p>
+                </div>
+
+                <!-- Project Difficulty Tabs -->
+                <div class="flex justify-center gap-4 mb-8">
+                    <button onclick="filterProjects('beginner')"
+                        class="px-6 py-2 bg-green-500/20 text-green-400 rounded-full hover:bg-green-500/30 transition-colors">
+                        🟢 Beginner
+                    </button>
+                    <button onclick="filterProjects('intermediate')"
+                        class="px-6 py-2 bg-yellow-500/20 text-yellow-400 rounded-full hover:bg-yellow-500/30 transition-colors">
+                        🟡 Intermediate
+                    </button>
+                    <button onclick="filterProjects('advanced')"
+                        class="px-6 py-2 bg-red-500/20 text-red-400 rounded-full hover:bg-red-500/30 transition-colors">
+                        🔴 Advanced
+                    </button>
+                    <button onclick="filterProjects('all')"
+                        class="px-6 py-2 bg-indigo-500/20 text-indigo-400 rounded-full hover:bg-indigo-500/30 transition-colors">
+                        🔵 All Projects
+                    </button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div id="projectsGrid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Project cards will be dynamically inserted -->
+                </div>
+
+                <!-- Project Detail Modal -->
+                <div id="projectModal"
+                    class="hidden fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+                    <div class="bg-slate-800 rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-auto">
+                        <div
+                            class="sticky top-0 bg-slate-800 p-6 border-b border-slate-700 flex items-center justify-between">
+                            <h2 id="modalProjectTitle" class="text-2xl font-bold">Project Title</h2>
+                            <button onclick="closeProjectModal()"
+                                class="p-2 hover:bg-slate-700 rounded-lg transition-colors">
+                                <i class="fas fa-times text-xl"></i>
+                            </button>
+                        </div>
+                        <div id="modalProjectContent" class="p-6">
+                            <!-- Project details will be inserted here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTERVIEW SECTION -->
+        <section id="interview" class="section hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+                <div class="text-center mb-12">
+                    <h1 class="text-4xl font-bold mb-4">💼 Interview Preparation</h1>
+                    <p class="text-slate-400">Ace your backend developer interviews</p>
+                </div>
+
+                <!-- Interview Categories -->
+                <div class="grid md:grid-cols-2 gap-8 mb-12">
+                    <!-- Common Questions -->
+                    <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center">
+                                <i class="fas fa-question text-blue-400 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold">Common Questions</h3>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="question-item bg-slate-700/50 rounded-lg p-4 cursor-pointer"
+                                onclick="toggleAnswer(this)">
+                                <div class="flex items-center justify-between">
+                                    <span class="font-medium">What is the difference between PUT and PATCH?</span>
+                                    <i class="fas fa-chevron-down text-slate-400"></i>
+                                </div>
+                                <div class="answer hidden mt-4 pt-4 border-t border-slate-600">
+                                    <p class="text-slate-300">PUT replaces the entire resource, while PATCH updates only
+                                        the specific fields. PUT is idempotent (same result if called multiple times),
+                                        while PATCH may not be.</p>
+                                </div>
+                            </div>
+                            <div class="question-item bg-slate-700/50 rounded-lg p-4 cursor-pointer"
+                                onclick="toggleAnswer(this)">
+                                <div class="flex items-center justify-between">
+                                    <span class="font-medium">Explain RESTful API principles</span>
+                                    <i class="fas fa-chevron-down text-slate-400"></i>
+                                </div>
+                                <div class="answer hidden mt-4 pt-4 border-t border-slate-600">
+                                    <p class="text-slate-300">REST APIs should be: Stateless (no client context on
+                                        server), use HTTP methods properly (GET, POST, PUT, DELETE), have resource-based
+                                        URLs, support caching, and return JSON/XML data.</p>
+                                </div>
+                            </div>
+                            <div class="question-item bg-slate-700/50 rounded-lg p-4 cursor-pointer"
+                                onclick="toggleAnswer(this)">
+                                <div class="flex items-center justify-between">
+                                    <span class="font-medium">What is the event loop in Node.js?</span>
+                                    <i class="fas fa-chevron-down text-slate-400"></i>
+                                </div>
+                                <div class="answer hidden mt-4 pt-4 border-t border-slate-600">
+                                    <p class="text-slate-300">The event loop allows Node.js to perform non-blocking I/O
+                                        operations by offloading operations to the system kernel. It handles callbacks,
+                                        timers, and async operations in a single thread.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Scenario Questions -->
+                    <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center">
+                                <i class="fas fa-lightbulb text-purple-400 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold">Scenario-Based Questions</h3>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="question-item bg-slate-700/50 rounded-lg p-4 cursor-pointer"
+                                onclick="toggleAnswer(this)">
+                                <div class="flex items-center justify-between">
+                                    <span class="font-medium">How would you handle 10,000 concurrent connections?</span>
+                                    <i class="fas fa-chevron-down text-slate-400"></i>
+                                </div>
+                                <div class="answer hidden mt-4 pt-4 border-t border-slate-600">
+                                    <p class="text-slate-300">Use clustering to utilize all CPU cores, implement load
+                                        balancing, use caching (Redis), optimize database queries, consider
+                                        microservices, and use async/await for non-blocking operations.</p>
+                                </div>
+                            </div>
+                            <div class="question-item bg-slate-700/50 rounded-lg p-4 cursor-pointer"
+                                onclick="toggleAnswer(this)">
+                                <div class="flex items-center justify-between">
+                                    <span class="font-medium">How do you secure a REST API?</span>
+                                    <i class="fas fa-chevron-down text-slate-400"></i>
+                                </div>
+                                <div class="answer hidden mt-4 pt-4 border-t border-slate-600">
+                                    <p class="text-slate-300">Use HTTPS, implement JWT authentication, validate all
+                                        inputs, use rate limiting, implement CORS properly, sanitize data to prevent
+                                        XSS, use parameterized queries for SQL injection prevention.</p>
+                                </div>
+                            </div>
+                            <div class="question-item bg-slate-700/50 rounded-lg p-4 cursor-pointer"
+                                onclick="toggleAnswer(this)">
+                                <div class="flex items-center justify-between">
+                                    <span class="font-medium">What is your approach to debugging production
+                                        issues?</span>
+                                    <i class="fas fa-chevron-down text-slate-400"></i>
+                                </div>
+                                <div class="answer hidden mt-4 pt-4 border-t border-slate-600">
+                                    <p class="text-slate-300">Check logs first, use monitoring tools, reproduce the
+                                        issue in staging, use debugging tools, add detailed logging, use APM tools,
+                                        check resource usage, and review recent changes.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Database Design Questions -->
+                <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700 mb-8">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center">
+                            <i class="fas fa-database text-green-400 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Database Design Questions</h3>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="question-item bg-slate-700/50 rounded-lg p-4 cursor-pointer"
+                            onclick="toggleAnswer(this)">
+                            <div class="flex items-center justify-between">
+                                <span class="font-medium">When would you use SQL over NoSQL?</span>
+                                <i class="fas fa-chevron-down text-slate-400"></i>
+                            </div>
+                            <div class="answer hidden mt-4 pt-4 border-t border-slate-600">
+                                <p class="text-slate-300">Use SQL when you need ACID compliance, complex queries with
+                                    joins, structured data, strict schema, and transactions. NoSQL is better for
+                                    flexible schemas, horizontal scaling, and simple queries.</p>
+                            </div>
+                        </div>
+                        <div class="question-item bg-slate-700/50 rounded-lg p-4 cursor-pointer"
+                            onclick="toggleAnswer(this)">
+                            <div class="flex items-center justify-between">
+                                <span class="font-medium">How do you optimize slow database queries?</span>
+                                <i class="fas fa-chevron-down text-slate-400"></i>
+                            </div>
+                            <div class="answer hidden mt-4 pt-4 border-t border-slate-600">
+                                <p class="text-slate-300">Add appropriate indexes, optimize JOINs, avoid SELECT *, use
+                                    query caching, analyze with EXPLAIN, limit result sets, denormalize when needed, and
+                                    partition large tables.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Tips -->
+                <div
+                    class="bg-gradient-to-br from-indigo-500/20 to-purple-500/20 rounded-2xl p-6 border border-indigo-500/30">
+                    <h3 class="text-xl font-bold mb-4">💡 Interview Tips</h3>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-green-400 mt-1"></i>
+                            <p class="text-slate-300">Always explain your thought process</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-green-400 mt-1"></i>
+                            <p class="text-slate-300">Use real-world examples when possible</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-green-400 mt-1"></i>
+                            <p class="text-slate-300">Don't be afraid to say "I don't know"</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-green-400 mt-1"></i>
+                            <p class="text-slate-300">Ask clarifying questions</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-green-400 mt-1"></i>
+                            <p class="text-slate-300">Practice coding on a whiteboard</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-green-400 mt-1"></i>
+                            <p class="text-slate-300">Review data structures and algorithms</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CERTIFICATES SECTION -->
+        <section id="certificates" class="section hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+                <div class="text-center mb-12">
+                    <h1 class="text-4xl font-bold mb-4">🏆 Certificates</h1>
+                    <p class="text-slate-400">Earn certificates by completing courses and quizzes</p>
+                </div>
+
+                <!-- Available Certificates -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                    <div
+                        class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-6 border border-slate-700 relative overflow-hidden">
+                        <div
+                            class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-yellow-500/20 to-amber-500/20 rounded-full -translate-y-1/2 translate-x-1/2">
+                        </div>
+                        <i class="fas fa-certificate text-5xl text-yellow-400 mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">Backend Beginner</h3>
+                        <p class="text-slate-400 text-sm mb-4">Complete Phase 1 & 2 of the roadmap</p>
+                        <div class="w-full bg-slate-700 rounded-full h-2 mb-2">
+                            <div class="bg-yellow-500 h-2 rounded-full" style="width: 0%"></div>
+                        </div>
+                        <span class="text-xs text-slate-400">0% Complete</span>
+                    </div>
+
+                    <div
+                        class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-6 border border-slate-700 relative overflow-hidden">
+                        <div
+                            class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-green-500/20 to-emerald-500/20 rounded-full -translate-y-1/2 translate-x-1/2">
+                        </div>
+                        <i class="fas fa-certificate text-5xl text-green-400 mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">Node.js Developer</h3>
+                        <p class="text-slate-400 text-sm mb-4">Master Node.js fundamentals and Express</p>
+                        <div class="w-full bg-slate-700 rounded-full h-2 mb-2">
+                            <div class="bg-green-500 h-2 rounded-full" style="width: 0%"></div>
+                        </div>
+                        <span class="text-xs text-slate-400">0% Complete</span>
+                    </div>
+
+                    <div
+                        class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-6 border border-slate-700 relative overflow-hidden">
+                        <div
+                            class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-blue-500/20 to-cyan-500/20 rounded-full -translate-y-1/2 translate-x-1/2">
+                        </div>
+                        -5xl text fa-certificate text<i class="fas-4"></i-blue-400 mb3 class="text>
+                        <h-xl font-bold mb-2">Database Expert</h3>
+                            <p class-400 text-sm mb-4">="text-slateComplete all database tutorials</p>
+                            <div class="w-full bg-slate-700 rounded-full h-2 mb-2">
+                                <div class="bg-blue-500 h-2 rounded-full" style="width: 0%"></div>
+                            </div>
+                            <span class="text-xs text-slate-400">0% Complete</span>
+                    </div>
+
+                    <div
+                        class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-6 border border-slate-700 relative overflow-hidden">
+                        <div
+                            class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-full -translate-y-1/2 translate-x-1/2">
+                        </div>
+                        <i class="fas fa-certificate text-5xl text-purple-400 mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">API Master</h3>
+                        <p class="text-slate-400 text-sm mb-4">Design and build RESTful APIs</p>
+                        <div class="w-full bg-slate-700 rounded-full h-2 mb-2">
+                            <div class="bg-purple-500 h-2 rounded-full" style="width: 0%"></div>
+                        </div>
+                        <span class="text-xs text-slate-400">0% Complete</span>
+                    </div>
+
+                    <div
+                        class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-6 border border-slate-700 relative overflow-hidden">
+                        <div
+                            class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-red-500/20 to-rose-500/20 rounded-full -translate-y-1/2 translate-x-1/2">
+                        </div>
+                        <i class="fas fa-certificate text-5xl text-red-400 mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">Security Specialist</h3>
+                        <p class="text-slate-400 text-sm mb-4">Master authentication & security</p>
+                        <div class="w-full bg-slate-700 rounded-full h-2 mb-2">
+                            <div class="bg-red-500 h-2 rounded-full" style="width: 0%"></div>
+                        </div>
+                        <span class="text-xs text-slate-400">0% Complete</span>
+                    </div>
+
+                    <div
+                        class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-6 border border-slate-700 relative overflow-hidden">
+                        <div
+                            class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-cyan-500/20 to-teal-500/20 rounded-full -translate-y-1/2 translate-x-1/2">
+                        </div>
+                        <i class="fas fa-star text-5xl text-cyan-400 mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">Full Backend Developer</h3>
+                        <p class="text-slate-400 text-sm mb-4">Complete entire roadmap</p>
+                        <div class="w-full bg-slate-700 rounded-full h-2 mb-2">
+                            <div class="bg-cyan-500 h-2 rounded-full" style="width: 0%"></div>
+                        </div>
+                        <span class="text-xs text-slate-400">0% Complete</span>
+                    </div>
+                </div>
+
+                <!-- Certificate Preview -->
+                <div
+                    class="bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 rounded-3xl p-8 text-center relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-full bg-[url('data:image/svg+xml,...')] opacity-10">
+                    </div>
+                    <div class="relative z-10">
+                        <i class="fas fa-award text-6xl text-yellow-300 mb-4"></i>
+                        <h2 class="text-3xl font-bold mb-2">Certificate of Completion</h2>
+                        <p class="text-xl mb-4">This certifies that</p>
+                        <p class="text-2xl font-bold mb-4">Your Name</p>
+                        <p class="mb-6">Has successfully completed the Backend Developer Program</p>
+                        <div class="flex justify-center gap-8 text-sm">
+                            <div>
+                                <div class="font-bold">Issue Date</div>
+                                <div class="text-slate-300" id="issueDate">-</div>
+                            </div>
+                            <div>
+                                <div class="font-bold">Certificate ID</div>
+                                <div class="text-slate-300">BM-2024-XXXXX</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Generate Certificate -->
+                <div class="mt-8 bg-slate-800 rounded-2xl p-6 border border-slate-700">
+                    <h3 class="text-xl font-bold mb-4">🎓 Generate Your Certificate</h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Your Name</label>
+                            <input type="text" id="certName" placeholder="Enter your full name"
+                                class="w-full bg-slate-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Course Completed</label>
+                            <select id="certCourse"
+                                class="w-full bg-slate-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                                <option value="Backend Beginner">Backend Beginner</option>
+                                <option value="Node.js Developer">Node.js Developer</option>
+                                <option value="Database Expert">Database Expert</option>
+                                <option value="API Master">API Master</option>
+                                <option value="Full Backend Developer">Full Backend Developer</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button onclick="generateCertificate()"
+                        class="mt-6 px-8 py-3 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-xl hover:opacity-90 transition-all">
+                        <i class="fas fa-certificate mr-2"></i>Generate Certificate
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 border-t border-slate-800 py-12 mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div
+                            class="w-10 h-10 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-server text-white"></i>
+                        </div>
+                        <span class="text-xl font-bold">BackendMaster With Pallavi Way
+        
+
+                        </span>
+                    </div>
+                    <p class="text-slate-400 text-sm">Your comprehensive guide to becoming a professional backend
+                        developer.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-slate-400 text-sm">
+                        <li><a href="#" onclick="showSection('roadmap')"
+                                class="hover:text-white transition-colors">Roadmap</a></li>
+                        <li><a href="#" onclick="showSection('tutorials')"
+                                class="hover:text-white transition-colors">Tutorials</a></li>
+                        <li><a href="#" onclick="showSection('projects')"
+                                class="hover:text-white transition-colors">Projects</a></li>
+                        <li><a href="#" onclick="showSection('interview')"
+                                class="hover:text-white transition-colors">Interview</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2 text-slate-400 text-sm">
+                        <li><a href="#" onclick="showSection('mcq')" class="hover:text-white transition-colors">MCQ
+                                Tests</a></li>
+                        <li><a href="#" onclick="showSection('playground')"
+                                class="hover:text-white transition-colors">Playground</a></li>
+                        <li><a href="#" onclick="showSection('certificates')"
+                                class="hover:text-white transition-colors">Certificates</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Connect</h4>
+                    <div class="flex gap-4">
+                        <a href="#"
+                            class="w-10 h-10 bg-slate-700 rounded-lg flex items-center justify-center hover:bg-slate-600 transition-colors">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-slate-700 rounded-lg flex items-center justify-center hover:bg-slate-600 transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-slate-700 rounded-lg flex items-center justify-center hover:bg-slate-600 transition-colors">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 mt-8 pt-8 text-center text-slate-400 text-sm">
+                © 2026 BackendMaster/With Pallavi_Way. All rights reserved. Happy Coding! 🚀
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
